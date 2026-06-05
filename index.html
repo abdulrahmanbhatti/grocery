@@ -1,42 +1,124 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grocery store</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo">
-        <i class="fa-solid fa-basket-shopping"></i>Grocery</a
-      >
-      <nav class="navbar">
-        <a href="#Home">Home</a>
-        <a href="#Feature">Feature</a>
-        <a href="#Product">Product</a>
-        <a href="#Categories">Categories</a>
-        <a href="#Review">Review</a>
-        <a href="#Bloge">Blogs</a>
-      </nav>
 
-      <div class="icon">
-        <div class="fa fa-bars" id="menu-btn"></div>
-        <div class="fa fa-search" id="search-btn"></div>
-        <div class="fa fa-basket-shopping" id="shopping-btn"></div>
-        <div class="fa fa-user" id="login-btn"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grocery store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <i class="fa-solid fa-basket-shopping"></i>Grocery</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#feature">Feature</a>
+      <a href="#Product">Product</a>
+      <a href="#Categories">Categories</a>
+      <a href="#Review">Review</a>
+      <a href="#Bloge">Blogs</a>
+    </nav>
+
+    <div class="icon">
+      <div class="fa fa-bars" id="menu-btn"></div>
+      <div class="fa fa-search" id="search-btn"></div>
+      <div class="fa fa-basket-shopping" id="shopping-btn"></div>
+      <div class="fa fa-user" id="login-btn"></div>
+    </div>
+    <form class="search-form" action="">
+      <input type="search" id="search-box" placeholder="Search Hear " />
+      <label for="search-box" class="fa fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+      <div class="box" id="cart1">
+        <i class="fa fa-trash"></i>
+        <img src="image/cart-img-1.png" alt="" />
+        <div class="content">
+          <h3>watermelon</h3>
+          <span class="proice"> RS:50 </span>
+          <span class="quantity"> Qty : 1</span>
+        </div>
       </div>
-      <form class="search-form" action="">
-        <input type="search" id="search-box" placeholder="Search Hear " />
-        <label for="search-box" class="fa fa-search"></label>
-      </form>
-    </header>
 
-    <script src="js/script.js"></script>
-  </body>
+      <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="image/cart-img-2.png" alt="" />
+        <div class="content">
+          <h3>Onion</h3>
+          <span class="proice"> RS:100 </span>
+          <span class="quantity"> Qty : 3</span>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="image/cart-img-3.png" alt="" />
+        <div class="content">
+          <h3>Chicken</h3>
+          <span class="proice"> RS:550 </span>
+          <span class="quantity"> Qty : 1</span>
+        </div>
+      </div>
+      <div class="total">total : RS : 700 /-</div>
+      <a href="#" class="btn"> Checkout</a>
+    </div>
+
+    <form action="" class="login-form ">
+      <h3>login now </h3>
+      <input type="email" class="box" name="" id="" placeholder="Enter your email">
+      <input type="password" class="box" id="" placeholder="Enter your password">
+      <p>Forget Your Password <a href="#">Click Hear </a>
+      <p>Don`t Have An Account <a href="#"> Create Now</a></p>
+      </p>
+      <input type="submit" name="" id="" value="login now" class="btn">
+    </form>
+  </header>
+  <section>
+
+    <div class="home" id="home">
+      <div class="content">
+        <h3>Fresh And <span> Organic</span> Product For You </h3>
+        <p> This Website Designed By Abdul Rahman </p>
+
+        <a href="#" class="btn"> Shope Now </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- feature -->
+  <section class="feature" id="feature">
+    <h1 class="heading"> Our <span>Feature</span></h1>
+
+
+    <div class="box-container">
+      <div class="box">
+        <img src="image/feature-img-1.png" alt="">
+        <h3>Fresh And Organic</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsum dolorem ipsa deserunt molestiae, voluptatibus iure,! </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="box">
+        <img src="image/feature-img-2.png" alt="">
+        <h3>Fresh And Organic</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsum dolorem ipsa deserunt molestiae, voluptatibus iure,</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="box">
+        <img src="image/feature-img-3.png" alt="">
+        <h3>Fresh And Organic</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsum dolorem ipsa deserunt molestiae, voluptatibus iure, </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
