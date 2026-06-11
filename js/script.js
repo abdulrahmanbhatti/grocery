@@ -38,23 +38,74 @@ window.onscroll=()=>{
 }
 
 
-var swiper = new Swiper(".product-slider", {
-    loop: true,               /* Slider khatam hone par dobara pehle se start ho jaye */
-    grabCursor: true,         /* Mouse le jaane par pakadne (drag) ka icon aaye */
-    spaceBetween: 20,         /* Boxes ke darmayan gap */
-    autoplay: {
-        delay: 3000,          /* 3 second ke baad automatic slide ho */
-        disableOnInteraction: false,
+ var swiper = new Swiper(".product-slider", {
+    //   slidesPerView: 1,
+    loop:true,
+      spaceBetween: 20,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    autoplay :
+    {
+        delay:2000,
+        disablOninteration:false,
     },
-    breakpoints: {
-        0: {
-            slidesPerView: 1, /* Mobile par 1 product dikhe */
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
         },
-        768: {
-            slidesPerView: 2, /* Tablet par 2 products dikhein */
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
-        1024: {
-            slidesPerView: 3, /* Laptop/Desktop par 3 ya 4 products dikhein */
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
         },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+    // review
+     var swiper = new Swiper(".review-slider", {
+    //   slidesPerView: 1,
+    loop:true,
+      spaceBetween: 20,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    autoplay :
+    {
+        delay:2000,
+        disablOninteration:false,
     },
-});
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+
+ 
